@@ -1,7 +1,35 @@
 // Import GOV.UK elements, this will import the frontend toolkit and some base styles.
 // Take a look at elements.scss to see which files are imported.
-@import 'elements';
+//@import 'elements';
 
+
+
+
+
+.headerbar {
+background-image: url(/public/images/topbar-bg.png);
+background-repeat: repeat-x;
+height: 36px;
+}
+
+
+.lang {
+float:left;
+display: block;
+}
+
+.lang-selected {
+  border-radius: 3px;
+  padding:3px 3px 12px 3px;
+  background: url(/public/images/lang-arrow.png) no-repeat bottom;
+}
+.lang-selected a {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+      height: 10px;
+      font-size: 0.5em;
+}
 
 
 
@@ -30,21 +58,6 @@ background-repeat: no-repeat;
 
 
 
-
-.reg-mark {
-font:28px uknumberplateregular;
-background-color: #ffd307;
-border: 0.13em solid #333;
-padding: 0.33em 0.4em 0.33em 0.5em;
-font-size: 140%;
-border-radius: 0.25em;
-text-transform:uppercase;
-}
-@media (max-width: 640px) {
-  .reg-mark-parent {
-  margin-bottom: 0.5em;
-  }
-}
 
 
 

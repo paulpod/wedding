@@ -1,12 +1,185 @@
-{{<layout}}
+<html>
+<head><title>
+Wedding-o-matic Styles
+</title></head>
 
-{{$pageTitle}}Sample page{{/pageTitle}}
+<link href="/public/stylesheets/wedding.css" media="screen" rel="stylesheet" type="text/css">
 
-{{$content}}
+<body>
+
+
 <main id="content" role="main">
+
+
+<img src="/public/images/eg-topbar-lang.png" width="294" height="132" align="middle"> Actual sized
+<br>
+<img src="/public/images/eg-topbar-lang.png" width="147" height="66" align="middle"> Retina x2 sized
+
+
+<div class="headerbar">
+  <div style="float:left">
+  language
+  </div>
+
+  <div class="lang">
+  <a href="#"><img src="/public/images/lang-welsh.png" width="16" height="10"></a>
+  </div>
+
+  <div class="lang lang-selected">
+  <a href="#"><img src="/public/images/lang-english.png" width="16" height="10"></a>
+  </div>
+
+  <br clear="all">
+</div>
+
+
+
   <h1 class="heading-xlarge">Sample page</h1>
+
+  <h2 class="heading-large">Main heading</h2>
+
+  <h3 class="heading-medium">Sub heading</h3>
+
+  <p>Body copy would always try to keep a sensible line length so not flowing the entire width of the page but use columns to restrict to two or three quarters of the page width. Nice big body text and a generous line-height too to make it easy to read.</p>
+
+  <h2 class="heading-large">Form elements</h2>
+
+
+  <form action="/" method="post" class="form">
+
+  <!-- Full name -->
+	<div class="form-group">
+	<label class="form-label-bold" for="full-name">Name</label>
+	<p class="form-hint">Will be show to your guests</p>
+	<input type="text" class="form-control" id="full-name">
+	</div>
+
+
+  <!-- Email address -->
+  <div class="form-group">
+  <label class="form-label-bold" for="email1">Email address</label>
+  <p class="form-hint">Will be used to sign on, not be shared with anyone else</p>
+  <input type="text" class="form-control" id="email1">
+  <p class="form-info-error">Did you mean username@commonisp.com?</p>
+  </div>
+
+
+  <!-- Password -->
+  <div class="form-group">
+  <label class="form-label-bold" for="password">Create a password</label>
+  <!-- <p class="form-hint">Use some mix of letters and numbers</p> -->
+  <input type="text" class="form-control" id="password">
+  <p class="form-info-green">Strong password</p>
+  </div>
+
+
+  <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+      <ul>
+        <li><a href="#">Skip this section for now</a></li>
+        <li><a href="/">Back</a></li>
+      </ul>
+    </div>
+
+  </form>
+
+
+
+
+  <h1 class="heading-large">Your photos <span class="heading-function"><a href="#">+ photos</a></span></h1>
+
+  <p class="form-hint">Latest photos from a pool of <a href="#">203 photos</a> &mdash; <a href="#">show all</a></p>
+
+  <div class="photostrip">
+    <img src="/public/images/thumb1.jpg" class="thumbsize1">
+    <img src="/public/images/thumb2.jpg" class="thumbsize1">
+    <img src="/public/images/thumb3.jpg" class="thumbsize1">
+    <img src="/public/images/thumb4.jpg" class="thumbsize1">
+    <img src="/public/images/thumb5.jpg" class="thumbsize1">
+    <img src="/public/images/thumb6.jpg" class="thumbsize1">
+  </div>
+
+
+
+  <h2 class="heading-medium">Collections <span class="heading-function"><a href="#">+ add a collection</a></span></h2>
+
+  <ul class="link-list">
+    <li><a href="#">Stag do pix (12)</a></li>
+    <li><a href="#">Church (21)</a></li>
+    <li><a href="#">Reception (20)</a></li>
+  </ul>
+
+
+
+  <h2 class="heading-medium">Events <span class="heading-function"><a href="#">+ add an event</a></span></h2>
+
+  <h2 class="heading-medium">Dave's stag do in Bristol</h2>
+
+  <ul class="mini-info">
+    <li>June 12, 2015</li>
+    <li>12 people</li>
+    <li>2 photo collections</li>
+    <li>45 photos</li>
+    <li>nip-rip-top</li>
+  </ul>
+
+
+  <h2 class="heading-medium">Dave and Johanna's Wedding Ceremony</h2>
+
+  <ul class="mini-info">
+    <li>June 30, 2015</li>
+    <li>42 people</li>
+    <li>1 photo collections</li>
+    <li>25 photos</li>
+    <li>lop-guy-dip</li>
+  </ul>
+
+
+  <h2 class="heading-medium">Wedding reception at The Feather's</h2>
+
+  <ul class="mini-info">
+    <li>June 30, 2015</li>
+    <li>62 people</li>
+    <li>2 photo collections</li>
+    <li>50 photos</li>
+    <li>tin-boy-pop</li>
+  </ul>
+
+
+
+  <h2 class="heading-medium">People <span class="heading-function"><a href="#">+ add people</a></span></h2>
+
+  <p>You have added <a href="#">62 people</a> organised into <a href="#">5 lists</a></p>
+
+  <ul class="col-list">
+    <li><a href="#">Everyone (62)</a></li>
+    <li><a href="#">not on a list (3)</a></li>
+  </ul>
+
+
+  <ul class="col-list">
+    <li><a href="#">Stag do guys (12)</a></li>
+    <li><a href="#">Hen do girls (14)</a></li>
+    <li><a href="#">Wedding ceremony - his (21)</a></li>
+    <li><a href="#">Wedding ceremony - hers (21)</a></li>
+    <li><a href="#">Reception extras (20)</a></li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </main>
-{{/content}}
 
-{{/layout}}
+</body>
 
+</html>

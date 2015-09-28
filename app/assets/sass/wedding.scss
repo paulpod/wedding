@@ -3,7 +3,11 @@
 //@import 'elements';
 
 
-
+body {
+  //font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: 'chaparral-pro', serif;
+  font-size: 18px;
+}
 
 
 .headerbar {
@@ -31,6 +35,25 @@ display: block;
       font-size: 0.5em;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 300;
+//-family: 'magpie', sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
 
 
 strong {
@@ -38,9 +61,65 @@ strong {
 }
 
 
+/* used for things like + add links to big Photos header */
+.heading-function {
+font-size: 50%;
+}
+.heading-function a {
+  text-decoration: none;
+}
 
 
 
+
+.floated {
+float: left;
+}
+.floated:after {
+content:'';
+display:block;
+clear: both;
+}
+
+.divided {
+border-right: 1px #ccc solid;
+margin-right: 1em;
+}
+
+
+/* * THUMBNAIL STYLES * */
+
+/* Use this one for the rows of pictures... 
+  only the height is constrained, width should scale in proportion  */
+.thumbsize1 {
+  height:120px;
+}
+
+/* Use this one for the 4x square pics as previews
+  eg. for collections of images or events with images, or users with images */
+
+.thumblist {
+padding: 0;
+margin: 0;
+list-style: none;
+width: 125px;
+margin-right: 1em;
+}
+
+.thumblist li {
+float: left;
+height: 60px;
+width: 60px;
+margin: 1px;
+overflow: hidden;
+}
+
+.thumblist img {
+display: inline-block;
+min-width: 100%;
+min-height: 100%;
+-ms-interpolation-mode: bicubic; /* Better image scaling in IE */
+}
 
 
 
@@ -58,7 +137,11 @@ background-repeat: no-repeat;
 
 
 
+/* Tables for things */
 
+.mini-info li {
+  list-style: none;
+}
 
 
 
